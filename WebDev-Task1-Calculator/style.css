@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF1F5; /* Blush Pink */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 350px;
+    background: #F4B6C8; /* Dusty Rose */
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px #D887A833;
+}
+
+h2 {
+    color: #603D4D;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.display {
+    background: #FFFFFF;
+    color: #603D4D;
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+#expression {
+    color: #D887A8; /* Muted Rose */
+    min-height: 25px;
+    font-size: 18px;
+}
+
+#result {
+    color: #603D4D;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
+}
+
+button {
+    min-width: 0;
+    min-height: 55px;
+    border: none;
+    border-radius: 9px;
+    background: #FFF1F5; /* Blush Pink */
+    color: #603D4D;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    filter: brightness(0.96);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+button:focus-visible {
+    outline: 2px solid #D887A8;
+    outline-offset: 2px;
+}
+
+.special {
+    background: #D887A8; /* Muted Rose */
+    color: #FFFFFF;
+}
+
+.operator {
+    background: #C8A2C8; /* Soft Mauve */
+    color: #FFFFFF;
+}
+
+.equals {
+    background: #D887A8; /* Muted Rose */
+    color: #FFFFFF;
+    grid-row: span 2;
+}
+
+#message {
+    min-height: 20px;
+    margin-top: 12px;
+    color: #B65379;
+    font-size: 13px;
+    text-align: center;
+}
