@@ -1,0 +1,269 @@
+
+/* Basic page setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f0e8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+    background: #283c50;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+section {
+    padding: 25px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #283c50;
+    margin-bottom: 15px;
+    font-size: 27px;
+}
+
+/* Hero section */
+.hero {
+    background: #ffffff;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+a {
+    color: #245ca6;
+    font-weight: bold;
+}
+
+/* Biography section */
+.biography {
+    background: #e3eaf2;
+}
+
+.biography p {
+    margin-bottom: 15px;
+}
+
+/* Timeline section */
+.timeline {
+    background: #ffffff;
+}
+
+.achievement {
+    background: #f4f0e8;
+    border-left: 5px solid #d69b50;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+.achievement h3 {
+    color: #283c50;
+}
+
+/* Quote section */
+.quote {
+    background: #dce9df;
+    text-align: center;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-style: italic;
+    color: #283c50;
+    margin: 15px 0;
+}
+
+/* Legacy section */
+.legacy {
+    background: #ffffff;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    padding: 10px 16px;
+    margin: 12px 4px 0;
+    border: none;
+    border-radius: 7px;
+    background: #d69b50;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #b77d35;
+    transform: translateY(-2px);
+}
+
+button:focus-visible {
+    outline: 3px solid #245ca6;
+    outline-offset: 3px;
+}
+
+/* Footer */
+footer {
+    background: #283c50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer button {
+    background: #d69b50;
+}
+
+/* Make sure hidden content stays hidden */
+[hidden] {
+    display: none !important;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #1e232b;
+    color: #e8eaf0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background: #151920;
+    color: #e8eaf0;
+}
+
+body.dark-mode .hero,
+body.dark-mode .timeline,
+body.dark-mode .legacy {
+    background: #2b323d;
+    color: #e8eaf0;
+}
+
+body.dark-mode .biography {
+    background: #303b49;
+    color: #e8eaf0;
+}
+
+body.dark-mode .quote {
+    background: #34483f;
+    color: #e8eaf0;
+}
+
+body.dark-mode h2,
+body.dark-mode .achievement h3,
+body.dark-mode blockquote {
+    color: #f1c9a0;
+}
+
+body.dark-mode .achievement {
+    background: #383d45;
+    border-left-color: #d69b50;
+}
+
+body.dark-mode a {
+    color: #a9ceff;
+}
+
+body.dark-mode .hero img {
+    border: 3px solid #4b5665;
+}
+
+body.dark-mode button {
+    background: #bd8241;
+    color: #ffffff;
+}
+
+body.dark-mode button:hover {
+    background: #d69b50;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main {
+        width: 94%;
+        margin: 18px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .hero img {
+        max-width: 260px;
+    }
+
+    blockquote {
+        font-size: 20px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
